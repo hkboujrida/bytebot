@@ -75,7 +75,7 @@ export class TasksController {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${proxyApiKey}`,
+            'x-litellm-api-key': proxyApiKey,
           },
         });
 
